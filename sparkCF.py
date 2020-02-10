@@ -89,7 +89,7 @@ def main():
         
     #%%
 
-    conf=SparkConf().setAppName('hw3_task2').setMaster('local[*]')
+    conf=SparkConf().setAppName('').setMaster('local[*]')
     sc=SparkContext(conf=conf)
     #start=time.time()
     rdd=sc.textFile(train_file_name)
